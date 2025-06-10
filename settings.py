@@ -1,6 +1,6 @@
 import os
 import environ
-
+ALLOWED_HOSTS = env('ALLOWED_HOSTS').split(',')
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Initialise environ
