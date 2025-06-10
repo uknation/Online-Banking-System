@@ -1,16 +1,10 @@
-import environ
 import os
+import environ
 
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+# Initialise environ
 env = environ.Env(
     DEBUG=(bool, False)
 )
-
-environ.Env.read_env()
-
-DEBUG = env('DEBUG')
-SECRET_KEY = env('SECRET_KEY')
-ALLOWED_HOSTS = env('ALLOWED_HOSTS').split(',')
-
-DATABASES = {
-    'default': env.db()
-}
+environ.Env.read_env(os.path.join(BASE_DIR, '.env'))  # this reads local .env
