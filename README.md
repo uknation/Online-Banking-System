@@ -19,10 +19,10 @@ The **Online Banking System** is a secure, full-featured web application built w
 ## 🛠️ Tech Stack
 
 **Frontend**  
-- HTML5, CSS3, Bootstrap (for responsive UI)
+- HTML
 
 **Backend**  
 - Django (Python Web Framework)
 
 **Database**  
-- SQLite (Default for development; easy to switch to PostgreSQL)
+- SQLite
